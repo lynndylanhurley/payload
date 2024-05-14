@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import type express from 'express'
 import type serveStatic from 'serve-static'
 import type { ResizeOptions, Sharp } from 'sharp'
@@ -9,6 +8,8 @@ export type FileSize = {
   height: null | number
   mimeType: null | string
   width: null | number
+  x?: number
+  y?: number
 }
 
 export type FileSizes = {
@@ -24,6 +25,8 @@ export type FileData = {
   tempFilePath?: string
   url?: string
   width: number
+  x?: number
+  y?: number
 }
 
 export type ProbedImageSize = {
